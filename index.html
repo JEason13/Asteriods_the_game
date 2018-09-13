@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <title>Asteroids</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="adress=no" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+  <meta name="description" content="Asteroids Game." />
+  <meta name="author" content="E23" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" />
+  <script src="https://rawgit.com/silent-tempest/Peako/master/peako.js?rev=4"></script>
+  <script src="https://rawgit.com/silent-tempest/v6/master/v6.js?rev=7"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.4/platform.min.js"></script>
+</head>
+
+<body>
+	  <audio autoplay loop ><source src="http://soundimage.org/wp-content/uploads/2017/08/Bubble-Gum-Puzzler-2.mp3" type="audio/mp3"></audio>
+  <div id="overlay" class="active">
+	<div id="menu">
+	  <hr />
+	  <h1 onclick="this.count ? this.count < 5 ? ++this.count : this.count++ === 5 && _( this ).after( '<p>I\'m lazy to optimize it.</p>' ) : this.count = 2;">Asteroids</h1>
+
+	  <h2>Rules</h2>
+
+	  <ul>
+		<li><p>Do not touch Asteroids.</p></li>
+     </ul>
+
+
+	  <button id="play">play</button>
+	</div>
+  </div>
+
+</body>
+
+</html>
